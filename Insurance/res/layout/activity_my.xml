@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/myinsurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="55dp"
+        android:text="myinsurance" />
+
+    <Button
+        android:id="@+id/myclaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myinsurance"
+        android:layout_below="@+id/myinsurance"
+        android:layout_marginTop="34dp"
+        android:text="myclaim" />
+
+    <Button
+        android:id="@+id/claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myclaim"
+        android:layout_centerVertical="true"
+        android:text="claim" />
+
+</RelativeLayout>
