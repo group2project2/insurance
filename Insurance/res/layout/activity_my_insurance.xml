@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_insurance_pur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/insurance_tv_pur"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <GridView
+        android:id="@+id/gv_insurance"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:horizontalSpacing="15dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="15dp" >
+    </GridView>
+    
+     <TextView 
+        android:id="@+id/tv_insurance_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/insurance_tv_add"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+     <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_weight="2"
+         >
+         <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal"
+    		android:layout_weight="1"
+             >
+             <TextView 
+             android:id="@+id/tv_insurance_insty"
+             android:layout_width="120dp"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:text="@string/insurance_tv_insty"
+             />
+    		 <Spinner
+       		android:id="@+id/spinner_insurance"
+         	android:layout_width="match_parent"
+         	android:layout_height="wrap_content" />
+         </LinearLayout>
+         
+         <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal"
+    		android:layout_weight="1"
+             >
+             <TextView 
+             android:id="@+id/tv_insurance_insornum"
+             android:layout_width="120dp"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:text="@string/insurance_tv_insornum"
+             />
+    		 <EditText
+       		android:id="@+id/et_insurance"
+         	android:layout_width="match_parent"
+         	android:layout_height="wrap_content" />
+         </LinearLayout>
+         
+     </LinearLayout>
+     
+     <Button 
+         android:id="@+id/btn_insurance"
+         android:layout_width="70dp"
+         android:layout_height="35dp"
+         android:text="@string/insurance_btn"
+         android:layout_marginLeft="230dp"
+         />
+     
+
+</LinearLayout>
