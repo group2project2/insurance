@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id="@+id/img_my"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/usericon"
+        />
+    <TextView 
+        android:id="@+id/tv_username"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Sara Scott"
+        />
+    <Button 
+        android:id="@+id/btn_my_claim"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_btn_height"
+        android:layout_marginTop="5dp"
+        android:text="@string/my_btn_claim"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+     <Button 
+        android:id="@+id/btn_my_insurance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_btn_height"
+        android:text="@string/my_btn_insurance"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+ 	<Button 
+        android:id="@+id/btn_my_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_btn_height"
+        android:text="@string/my_btn_info"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+ 	<Button 
+        android:id="@+id/btn_my_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_btn_height"
+        android:text="@string/my_btn_help"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+    <Button 
+        android:id="@+id/btn_my_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_btn_height"
+        android:text="@string/my_btn_logout"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+
+</LinearLayout>

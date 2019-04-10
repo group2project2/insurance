@@ -23,10 +23,10 @@ public class ClaimActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);	
-		setContentView(R.layout.activity_claim);
+		setContentView(R.layout.activity_my_claim);
 		
 		//back
-				Button back=(Button)findViewById(R.id.back);
+				/*Button back=(Button)findViewById(R.id.back);
 				back.setOnClickListener(new OnClickListener(){
 
 					@Override
@@ -35,10 +35,10 @@ public class ClaimActivity extends Activity{
 						startActivity(intent);
 						finish();
 					}
-				});
+				});*/
 				
 		//insuranceselect spinner
-		Spinner insid= (Spinner) findViewById(R.id.insuranceid); 
+		/*Spinner insid= (Spinner) findViewById(R.id.insuranceid); 
 		SharedPreferences userinsurancesp= getApplicationContext().getSharedPreferences("currentuserinsurance",0);					
 		String[] insids=userinsurancesp.getString("insurances", null).split("/");
 		List<String> insuranceidlist= new ArrayList<String>();
@@ -51,9 +51,9 @@ public class ClaimActivity extends Activity{
 		ArrayAdapter<String> myadaptor=new ArrayAdapter<String>(ClaimActivity.this,
 				R.layout.activity_spinneritem, insuranceidlist);
 		insid.setAdapter(myadaptor);
-		
+		*/
 		//submit claim
-		Button submit=(Button)findViewById(R.id.submit);
+		/*Button submit=(Button)findViewById(R.id.submit);
 		submit.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -85,7 +85,7 @@ public class ClaimActivity extends Activity{
 				
 				}}).start();;
 			}
-		});
+		});*/
 	}
 
 }
