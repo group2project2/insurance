@@ -36,4 +36,13 @@
 	<string name="insurance_tv_insty">Insurance type:</string>
 	<string name="insurance_tv_insornum">Insurance number:</string>
 	<string name="insurance_btn">Add</string>
+	<string name="insurance_detail_type">Insurance Type:</string>
+	<string name="insurance_detail_number">Insurance Number:</string>
+	<string name="insurance_detail_start">Start Date:</string>
+	<string name="insurance_detail_end">End Date:</string>
+	<string name="claim_tv_title">My Claims</string>
+	<string name="claim_tv_add">Add a new claim</string>
+	<string name="claim_btn">Submit</string>
+	<string name="claim_tv_client">Client Name:</string>
+	<string name="claim_tv_reason">Reason:</string>
 </resources>
