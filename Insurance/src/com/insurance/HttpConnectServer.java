@@ -26,8 +26,12 @@ public class HttpConnectServer {
 		 URL url ;
 		if(rl==1) {
 		  url = new URL("http://39.105.30.59:80/androidlogin.php");
-		}else {
+		}else if(rl==2){
 			url = new URL("http://39.105.30.59:80/androidregister.php");
+		}else if(rl==3){
+			url = new URL("http://39.105.30.59:80/androidaddinsurance.php");
+		}else {
+			url = new URL("http://39.105.30.59:80/androidclaim.php");
 		}
 		 urlConnection = (HttpURLConnection) url.openConnection();
 		 urlConnection.setConnectTimeout(80000);

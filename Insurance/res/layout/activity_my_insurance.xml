@@ -53,13 +53,14 @@
              android:id="@+id/tv_insurance_insty"
              android:layout_width="120dp"
              android:layout_height="wrap_content"
-             android:gravity="center_vertical"
+             android:gravity="center"
              android:text="@string/insurance_tv_insty"
              />
     		 <Spinner
        		android:id="@+id/spinner_insurance"
          	android:layout_width="match_parent"
-         	android:layout_height="wrap_content" />
+         	android:layout_height="wrap_content"
+         	android:entries="@array/insurancetypespinner" />
          </LinearLayout>
          
          <LinearLayout 
@@ -69,22 +70,42 @@
     		android:layout_weight="1"
              >
              <TextView 
-             android:id="@+id/tv_insurance_insornum"
+             android:id="@+id/tv_insurance_startdate"
              android:layout_width="120dp"
              android:layout_height="wrap_content"
-             android:gravity="center_vertical"
-             android:text="@string/insurance_tv_insornum"
+             android:gravity="center"
+             android:text="@string/insurance_tv_startdate"
              />
-    		 <EditText
-       		android:id="@+id/et_insurance"
-         	android:layout_width="match_parent"
-         	android:layout_height="wrap_content" />
+    		 <Button
+       		android:id="@+id/btn_insurancestartdate"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:text="@string/ins_btn_datehint" />
+         </LinearLayout>
+         <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal"
+    		android:layout_weight="1"
+             >
+             <TextView 
+             android:id="@+id/tv_insurance_period"
+             android:layout_width="120dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="@string/insurance_tv_enddate"
+             />
+    		 <Button
+       		android:id="@+id/btn_insuranceenddate"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:text="@string/ins_btn_datehint" />
          </LinearLayout>
          
      </LinearLayout>
      
      <Button 
-         android:id="@+id/btn_insurance"
+         android:id="@+id/btn_addinsurance"
          android:layout_width="70dp"
          android:layout_height="35dp"
          android:text="@string/insurance_btn"

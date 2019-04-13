@@ -7,13 +7,17 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MyActivity extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_my_personal);		
+		setContentView(R.layout.activity_my_personal);	
+		TextView username=(TextView)findViewById(R.id.tv_username);
+		SharedPreferences usersp= getApplicationContext().getSharedPreferences("currentuser",0);
+		username.setText(usersp.getString("username", null));
 		
 	}
 	public void onClick(View v){

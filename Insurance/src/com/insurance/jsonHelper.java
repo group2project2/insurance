@@ -33,7 +33,6 @@ public class jsonHelper extends Activity{
 			 JSONArray jsarr=HttpConnectServer.httpconnection(2,json);
 			 if(jsarr.length()>1) {
 				 JSONObject js=jsarr.getJSONObject(0);
-				 String statu=js.getString("statu");
 					 SharedPreferences usersp= context.getSharedPreferences("currentuser",0);
 					 SharedPreferences.Editor userspeditor = usersp.edit(); 
 					 userspeditor.putString("useraccount",jsarr.getJSONObject(0).getString("id"));  
@@ -63,7 +62,7 @@ public class jsonHelper extends Activity{
 			 JSONObject json = new JSONObject();
 			 json.put("aswhat", aswhat);
 			 json.put("id", name);
-			 json.put("password",password);//把数据put进json对象中
+			 json.put("password",password);
 			 JSONArray jsarr=HttpConnectServer.httpconnection(1,json);
 			 if(jsarr.length()==1) {
 				
@@ -107,8 +106,55 @@ public class jsonHelper extends Activity{
 		
 			
 	}
-	public void claim(Context context,String insuranceid,String problem,String password) {
-		
+	//SUBMIT CLAIM**********************
+	public void claim(Context context,String insuranceid,String problem) {
+		try {					
+
+			 JSONObject json = new JSONObject();
+			 json.put("insuranceid", insuranceid);
+			 json.put("problem", problem);
+			 JSONArray jsarr=HttpConnectServer.httpconnection(4,json);
+			 if(jsarr.length()==1) {
+				
+				 Looper.prepare();
+				 Toast.makeText(context,jsarr.getJSONObject(0).getString("statu"),Toast.LENGTH_SHORT).show();
+				 Looper.loop();
+			 }else {
+				
+				 
+			 }
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+
+		}
+	}
+	//ADD NEW INSURANCE***************************
+	public void addInsurance(Context context,String startdate,String enddate,String instype,String customerID) {
+		try {					
+
+			 JSONObject json = new JSONObject();
+			 json.put("startdate", startdate);
+			 json.put("enddate", enddate);
+			 json.put("instype", instype);
+			 json.put("customerID", customerID);
+			 JSONArray jsarr=HttpConnectServer.httpconnection(3,json);
+			 if(jsarr.length()==1) {
+				
+				 Looper.prepare();
+				 Toast.makeText(context,jsarr.getJSONObject(0).getString("statu"),Toast.LENGTH_SHORT).show();
+				 Looper.loop();
+			 }else {
+				
+				 
+			 }
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+
+		}
 	}
 	
 }
