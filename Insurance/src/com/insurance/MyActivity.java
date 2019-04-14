@@ -26,7 +26,7 @@ public class MyActivity extends Activity{
 							
 			break;
 		case R.id.btn_my_insurance:
-			Intent intent2=new Intent(MyActivity.this,InsuranceActivity.class);
+			Intent intent2=new Intent(MyActivity.this,MyInsuranceActivity.class);
 			startActivity(intent2);
 			finish();
 			break;

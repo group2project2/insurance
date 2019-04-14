@@ -36,7 +36,7 @@
 	<string name="my_btn_logout">Log out</string>
 	<string name="main_btn1">Register</string>
 	<string name="main_btn2">Log in</string>
-	<string name="insurance_tv_pur">Purchased Insurances</string>
+	<string name="insurance_tv_pur">My Insurances</string>
 	<string name="insurance_tv_add">Add An Insurance</string>
 	<string name="insurance_tv_insty">Insurance type:</string>
 	<string name="insurance_tv_startdate">Start Date:</string>

@@ -17,7 +17,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class jsonHelper extends Activity{
+public class jsonHelper{
 
 	public void register(Context context,String name,String password,String mobile,String address,String nationalID,String sex,String bankID) {
 		try {					
@@ -40,8 +40,9 @@ public class jsonHelper extends Activity{
 					 userspeditor.putString("userpw",password);  
 					 userspeditor.commit();	
 					 Intent intent=new Intent(context,MyActivity.class);	
+					 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 					 context.startActivity(intent);
-				     finish();
+				     //finish();
 				
 			 }else {
 				 Looper.prepare();
@@ -93,8 +94,9 @@ public class jsonHelper extends Activity{
 				 userinsurancespeditor.commit();
 				 }
 				 Intent intent=new Intent(context,MyActivity.class);
+				 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				 context.startActivity(intent);				 
-				 finish();
+				 //finish();
 				 
 			 }
 
@@ -119,9 +121,6 @@ public class jsonHelper extends Activity{
 				 Looper.prepare();
 				 Toast.makeText(context,jsarr.getJSONObject(0).getString("statu"),Toast.LENGTH_SHORT).show();
 				 Looper.loop();
-			 }else {
-				
-				 
 			 }
 
 		} catch (Exception e) {

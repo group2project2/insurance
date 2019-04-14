@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
 				new Thread(new Runnable() {
 					@Override
 					public void run() {	
-				        lg.log(MainActivity.this,"customer", nick.getText().toString(), pass.getText().toString());				        
+				        lg.log(getApplicationContext(),"customer", nick.getText().toString(), pass.getText().toString());				        
 					}}).start();;
 				
 				
