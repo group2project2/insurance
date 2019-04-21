@@ -3,11 +3,14 @@ package com.example.insurance;
 import com.example.insurance.AddUserDialog;
 import com.example.insurance.MainActivity;
 import com.example.insurance.R;
+import com.example.util.CustomVideoView;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,11 +18,15 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
+	
+	private CustomVideoView videoview;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		initView();
 	}
 
 	@Override
@@ -40,6 +47,32 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void initView(){
+		videoview = (CustomVideoView) findViewById(R.id.videoview);
+		videoview.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.mainvideo2));
+		videoview.start();
+		 videoview.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+	            @Override
+	            public void onCompletion(MediaPlayer mediaPlayer) {
+	                videoview.start();
+	            }
+	        });
+	
+	}
+	
+	 @Override
+	    protected void onRestart() {
+	        initView();
+	        super.onRestart();
+	    }
+
+//	 @Override
+//	    protected void onStop() {
+//	        videoview.stopPlayback();
+//	        super.onStop();
+//	    }
+
 	
 	public void showDialog(){
 		final AddUserDialog dialog=new AddUserDialog(MainActivity.this);
