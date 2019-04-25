@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/register_et1"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:hint="@string/register_et1"
+        android:layout_gravity="center_horizontal"
+        />
+	<EditText 
+        android:id="@+id/register_et2"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:hint="@string/register_et2"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText 
+        android:id="@+id/register_et3"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:hint="@string/register_et3"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <RadioGroup
+        android:id="@+id/genderradioGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/gender1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/register_genderf" />
+
+        <RadioButton
+            android:id="@+id/gender2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/register_genderm" />
+
+    </RadioGroup>
+
+    <EditText 
+        android:id="@+id/register_et4"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:hint="@string/register_et4"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText 
+        android:id="@+id/register_et6"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:hint="@string/register_et6"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText 
+        android:id="@+id/register_et7"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:hint="@string/register_et7"
+        android:layout_gravity="center_horizontal"
+        />
+	<Button 
+	    android:id="@+id/register_btn"
+	    android:layout_width="80dp"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="200dp"
+	    android:text="@string/register_btn"
+	    />
+</LinearLayout>

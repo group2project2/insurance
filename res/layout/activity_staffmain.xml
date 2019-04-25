@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/bottomlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F0FFF0" >
+        
+        <Button
+            android:id="@+id/btn_allcalims"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0FFF0"
+            android:text="@string/staffui_bottombtn_allclaims" />
+        <Button
+            android:id="@+id/btn_staffmy"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0FFF0"
+            android:text="@string/main_tv7" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/staffallclaimlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infotitle"
+        android:layout_above="@+id/bottomlinearlayout" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/infotitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/staffui_allclaims" />
+    
+</RelativeLayout>

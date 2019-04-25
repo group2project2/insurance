@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myattr="http://schemas.android.com/apk/res/com.example.insurance"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    android:paddingBottom="0dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="0dp"
+    tools:context="com.insurance.MainActivity" >
+    
+    <com.util.CustomVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/main_btn1"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="113dp"
+        android:onClick="onClick"
+        android:text="@string/main_btn1" />
+
+    <Button
+        android:id="@+id/main_btn2"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/main_btn1"
+        android:text="@string/main_btn2" />
+
+        
+</RelativeLayout>
